@@ -23,3 +23,10 @@ app.get('/users', async (req, res) => {
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+const Person = require('./Person');  // Import the Person class
+
+const kareem = new Person('Kareem', 17, 'Mokattam, Egypt');
+
+
+kareem.displayInfo();
